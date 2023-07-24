@@ -9,6 +9,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Icons } from "./icons";
 
 import spirits from "@/public/7-spirits.png";
+import Logo from "./logo";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
@@ -35,13 +36,13 @@ export default function Header() {
           <div className="mr-4 flex shrink-0 items-center">
             <Link href={"/"}>
               <h1 className="flex items-center font-medium">
-                {/* <Logo /> */}
+                <Logo />
                 <span className="ml-2 hidden font-medium md:block text-zinc-100">
-                  UniSphere
+                  AwesomeAWS
                 </span>
               </h1>
             </Link>
-            <ul className="ml-1 flex items-center md:ml-3 text-sm">
+            <ul className="ml-1 hidden items-center md:ml-3 text-sm">
               <li className="text-zinc-400 mr-2">
                 <Link href={"/articles"} passHref>
                   Articles
@@ -71,7 +72,7 @@ export default function Header() {
 
               <li>
                 <Link href={"/profile"} passHref>
-                  <Avatar className="h-8 w-8 ring ring-zinc-300">
+                  <Avatar className="h-8 w-8 ring ring-zinc-100">
                     <AvatarImage src={spirits as unknown as string} />
                     <AvatarFallback>ss</AvatarFallback>
                   </Avatar>
