@@ -78,13 +78,15 @@
   }
 }
 
-.wrap {
-  display: grid;
-  grid-template-columns: 200px 1fr;
+/* Custom Scrollbars */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
 }
 
-.sidebar {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: rgb(65, 64, 64);
+  border-radius: 0px;
 }

@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Jumbotron() {
   return (
-    <section className="pt-24 pb-16">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+    <section className="pt-24">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-12">
         <h1 className="mb-4 text-4xl text-zinc-100 font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl">
           AwesomeAWS: Share and Discover Applications built with AWS
         </h1>
