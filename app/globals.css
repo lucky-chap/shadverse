@@ -79,7 +79,6 @@
 }
 
 /* Custom Scrollbars */
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 6px;
@@ -87,6 +86,6 @@
 
 ::-webkit-scrollbar-thumb {
   width: 6px;
-  background: rgb(65, 64, 64);
+  background: #0c0c0e;
   border-radius: 0px;
 }

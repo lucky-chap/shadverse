@@ -26,7 +26,7 @@ export default function page() {
         </div>
         <div className="flex md:mt-0 mt-4 flex- justify-center items-start">
           <Button className="mr-2">Live link</Button>
-          <Link href="https://github.com/lucky-chap/awesome-aws" passHref>
+          <Link href="https://github.com/lucky-chap/awesome-shadcn-ui" passHref>
             <Button>Source Code</Button>
           </Link>
         </div>

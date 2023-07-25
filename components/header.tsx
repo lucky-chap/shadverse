@@ -38,7 +38,7 @@ export default function Header() {
               <h1 className="flex items-center font-medium">
                 <Logo />
                 <span className="ml-2 hidden font-medium md:block text-zinc-100">
-                  AwesomeAWS
+                  shadverse
                 </span>
               </h1>
             </Link>
@@ -60,7 +60,7 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-end">
               <li className="">
                 <Link href={"/signin"} passHref className="hidden lg:block">
-                  <Button>Sign in</Button>
+                  <Button>Sign in with GitHub</Button>
                 </Link>
               </li>
 

@@ -55,8 +55,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Awesome AWS",
-  description: "All projects AWS",
+  title: "shadverse",
+  description:
+    "A collection of projects built with the awesome shadcn-ui component library",
 };
 
 export default function RootLayout({
