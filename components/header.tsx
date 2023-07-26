@@ -42,7 +42,15 @@ export default function Header() {
           <nav className="">
             <ul className="flex grow flex-wrap items-center justify-end">
               <li className="">
-                <Button>Source Code</Button>
+                <Button className="w-full">
+                  <a
+                    href="https://github.com/lucky-chap/shadverse"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source code
+                  </a>
+                </Button>
               </li>
             </ul>
           </nav>

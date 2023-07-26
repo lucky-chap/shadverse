@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Link from "next/link";
 
 export default function Jumbotron() {
   return (
@@ -24,14 +23,23 @@ export default function Jumbotron() {
           component library
         </p>
         <div className="mx-auto mt-10 flex max-w-xs flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
-          <Button className="w-full">Add project</Button>
           <Button className="w-full">
             <a
-              href="https://github.com/lucky-chap/shadverse"
+              href="https://github.com/lucky-chap/shadverse/blob/main/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            Visit shadcn/ui
+            >
+              Add project
+            </a>
+          </Button>
+          <Button className="w-full">
+            <a
+              href="https://ui.shadcn.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit shadcn/ui
+            </a>
           </Button>
         </div>
       </div>

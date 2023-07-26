@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <section>
       <Jumbotron />
-      <div className="mx-auto flex w-full max-w-2xl items-center space-x-2">
+      <div className="mx-auto hidden w-full max-w-2xl items-center space-x-2">
         <Input
           className="border-zinc-900 bg-zinc-950 text-zinc-400 focus-visible:ring-zinc-950"
           type="email"
