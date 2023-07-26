@@ -4,17 +4,12 @@ import { useState, useEffect } from "react";
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-// import Logo from "./logo";
-import { Icons } from "./icons";
 
-import spirits from "@/public/7-spirits.png";
 import Logo from "./logo";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
 
-  // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
     window.scrollY > 10 ? setTop(false) : setTop(true);
   };
@@ -37,46 +32,17 @@ export default function Header() {
             <Link href={"/"}>
               <h1 className="flex items-center font-medium">
                 <Logo />
-                <span className="ml-2 hidden font-medium md:block text-zinc-100">
+                <span className="ml-2 hidden font-medium text-zinc-100 md:block">
                   shadverse
                 </span>
               </h1>
             </Link>
-            <ul className="ml-1 hidden items-center md:ml-3 text-sm">
-              <li className="text-zinc-400 mr-2">
-                <Link href={"/articles"} passHref>
-                  Articles
-                </Link>
-              </li>
-              <li className="text-zinc-400">
-                <Link href={"/events"} passHref>
-                  Events
-                </Link>
-              </li>
-            </ul>
           </div>
 
           <nav className="">
             <ul className="flex grow flex-wrap items-center justify-end">
               <li className="">
-                <Link href={"/signin"} passHref className="hidden lg:block">
-                  <Button>Sign in with GitHub</Button>
-                </Link>
-              </li>
-
-              <li className="mx-2 hidden md:flex md:grow">
-                <Link href={"/new-article"} passHref>
-                  <Button>Add project</Button>
-                </Link>
-              </li>
-
-              <li>
-                <Link href={"/profile"} passHref>
-                  <Avatar className="h-8 w-8 ring ring-zinc-100">
-                    <AvatarImage src={spirits as unknown as string} />
-                    <AvatarFallback>ss</AvatarFallback>
-                  </Avatar>
-                </Link>
+                <Button>Source Code</Button>
               </li>
             </ul>
           </nav>
