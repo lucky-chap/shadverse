@@ -11,12 +11,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { IProject } from "@/lib/types";
 
-export default function ProjectCard() {
+export default function ProjectCard({ project }: { project: IProject }) {
   return (
     <Card className="group relative border-zinc-900 bg-zinc-950 text-zinc-400 brightness-90 transition-all duration-150 ease-in-out hover:brightness-110 focus-visible:ring-zinc-950">
       <a
-        href="https://github.com/lucky-chap/shadverse"
+        href={project.projectLink}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute -right-3 -top-2 hidden group-hover:block"
@@ -26,11 +27,8 @@ export default function ProjectCard() {
 
       <CardHeader className="flex flex-col items-start gap-4 space-y-0">
         <div className="space-y-1">
-          <CardTitle className="mb-2">shadcn/ui</CardTitle>
-          <CardDescription>
-            Beautifully designed components built with Radix UI and Tailwind
-            CSS.
-          </CardDescription>
+          <CardTitle className="mb-2">{project.title}</CardTitle>
+          <CardDescription>{project.description}</CardDescription>
         </div>
       </CardHeader>
       <CardContent>
@@ -40,11 +38,11 @@ export default function ProjectCard() {
             Dave Burk */}
             <GitHubButton
               data-color-scheme="dark"
-              href="https://github.com/lucky-chap/placebo"
+              href={project.projectRepo}
               data-show-count="true"
               data-text="Stars"
             >
-              Follow @ntkme
+              Stars
             </GitHubButton>
           </div>
           <div className="flex items-center">
@@ -52,12 +50,12 @@ export default function ProjectCard() {
             20k */}
             <div className="flex items-center">
               <GitHubButton
-                href="https://github.com/lucky-chap"
+                href={project.authorGithub}
                 data-color-scheme="dark"
                 data-show-count="true"
-                aria-label="Follow @lucky-chap on GitHub"
+                aria-label="Follow user on GitHub"
               >
-                Follow @lucky-chap
+                Follow author
               </GitHubButton>
             </div>
           </div>
